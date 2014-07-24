@@ -5,6 +5,7 @@ use css3 to create loading animation
 
 ###a simple start 
 firstly will make a loading icon.
+```html
     #loading{
 		width:100px;
 		height:100px;
@@ -17,11 +18,10 @@ firstly will make a loading icon.
   		-webkit-animation: loading .5s infinite linear;
 
 	}
-<<<<<<< HEAD
-The next step is writing keyframe property.
-=======
+```html
+
 THe next step is writing keyframe property.
->>>>>>> 1b5aa008c4e59d23aed3c0f6be0968563010b87e
+```html
     @keyframes loading {
 	    0% {
 	        -moz-transform: rotate(0deg);
@@ -41,11 +41,12 @@ THe next step is writing keyframe property.
 	        -webkit-transform: rotate(360deg);
 	    };
 	}
-<<<<<<< HEAD
+```html
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/simple-loading-animation.html">files</a>; 
 ====================
-### make a bar loading 
+###make a bar loading 
 we cam change the width of elment to create a bar loading.
+```html
 	@-webkit-keyframes loading{
 		0%:{
 			width:0;
@@ -62,9 +63,8 @@ we cam change the width of elment to create a bar loading.
 			width: 100%;
 		}
 	}
+```html
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/bar-loading.html">files</a>; 
-==============
+
 ### now let's do something trouble. We can make a circle loading.
 
-=======
->>>>>>> 1b5aa008c4e59d23aed3c0f6be0968563010b87e
