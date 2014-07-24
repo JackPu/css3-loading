@@ -1,0 +1,55 @@
+<!doctype>
+<html>
+<meta charset="utf-8"/>
+<head>
+	<title>two circle aniamtion</title>
+	<style type="text/css">
+		body{
+			margin: 0; 
+			padding:0;
+			background-color: #1ba1e2;
+		}
+		#container{ 
+			position: relative;;
+			width:400px;
+			height:20px;
+			margin:100px;
+			border:1px solid #fff;
+		}
+		#bar-loader{
+			margin:1px 0;
+			height:18px;
+			width:0;
+			background-color: #fff;
+			-webkit-animation:loading 2s infinite linear;
+			animation:loading 2s infinite linear;
+		}
+
+		@-webkit-keyframes loading{
+			0%:{
+				width:0;
+			}
+			100%{
+				width: 100%;
+			}
+
+
+		}
+		@keyframes loading{
+			0%:{
+				width:0;
+			}
+			100%{
+				width: 100%;
+			}
+
+
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="bar-loader"></div>
+	</div>
+</body>
+</html>
