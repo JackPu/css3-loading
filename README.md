@@ -5,7 +5,7 @@ use css3 to create loading animation
 
 ###a simple start
 firstly will make a loading icon.
-	#loading{
+        #loading{
 		width:100px;
 		height:100px;
 		margin:100px;
@@ -18,7 +18,7 @@ firstly will make a loading icon.
 
 	}
 THe next step is writing keyframe property.
-	 @keyframes loading {
+	@keyframes loading {
 	    0% {
 	        -moz-transform: rotate(0deg);
 	    }
