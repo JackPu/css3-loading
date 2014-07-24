@@ -18,6 +18,7 @@ firstly will make a loading icon.
 
 	}
 THe next step is writing keyframe property.
+	<pre>
 	@keyframes loading {
 	    0% {
 	        -moz-transform: rotate(0deg);
@@ -37,3 +38,4 @@ THe next step is writing keyframe property.
 	        -webkit-transform: rotate(360deg);
 	    };
 	}
+	</pre>
