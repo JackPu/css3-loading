@@ -1,0 +1,138 @@
+<!doctype>
+<html>
+<meta charset="utf-8"/>
+<head>
+	<title>normal loading gif</title>
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		body{
+			margin: 0; 
+			padding:0;
+			background-color: #1ba1e2;
+		}
+		#box{ 
+			position: absolute;
+			top:100px;
+			left:50%;
+			width:400px;
+			height:400px;
+			margin-left: -200px;
+		}
+
+		#loader-wrap{
+			position: relative;
+			width:250px;
+			height:250px;
+			margin: 10px auto;
+			animation: loading 2s steps(8,end) infinite;
+			-webkit-animation: loading 2s steps(8,end) infinite;
+		}
+		#loader-wrap li{
+			list-style:none;
+			position: absolute;
+			border-radius: 100%;
+			background-color: #fff;	
+		}
+
+		#loader-wrap li:nth-of-type(1){
+			width:30px;
+			height:30px;
+			left:110px;
+			top:100px;
+			transform:rotate(0) translate(0,-50px);
+			-webkit-transform:rotate(0) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(2){
+			width:28px;
+			height:28px;
+			left:111px;
+			top:111px;
+			transform:rotate(45deg) translate(0,-50px);
+			-webkit-transform:rotate(45deg) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(3){
+			width:26px;
+			height:26px;
+			left:112px;
+			top:112px;
+			transform:rotate(90deg) translate(0,-50px);
+			-webkit-transform:rotate(90deg) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(4){
+			width:24px;
+			height:24px;
+			left:113px;
+			top:113px;
+			transform:rotate(135deg) translate(0,-50px);
+			-webkit-transform:rotate(135deg) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(5){
+			width:22px;
+			height:22px;
+			left:114px;
+			top:114px;
+			transform:rotate(180deg) translate(0,-50px);
+			-webkit-transform:rotate(180deg) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(6){
+			width:20px;
+			height:20px;
+			left:115px;
+			top:115px;
+			transform:rotate(225deg) translate(0,-50px);
+			-webkit-transform:rotate(225deg) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(7){
+			width:18px;
+			height:18px;
+			left:116px;
+			top:116px;
+			transform:rotate(270deg) translate(0,-50px);
+			-webkit-transform:rotate(270deg) translate(0,-50px);
+		}
+		#loader-wrap li:nth-of-type(8){
+			width:16px;
+			height:16px;
+			left:117px;
+			top:117px;
+			transform:rotate(315deg) translate(0,-50px);
+			-webkit-transform:rotate(315deg) translate(0,-50px);
+		}
+
+		@keyframes loading{
+			0%{
+				transform: rotate(0deg) scale(0.6);
+				
+			}
+			100%{
+				transform: rotate(360deg) scale(0.6);
+			}
+		}
+		@-webkit-keyframes loading{
+			0%{
+				-webkit-transform: rotate(0deg) scale(0.6);
+			}
+			100%{
+				-webkit-transform: rotate(360deg) scale(0.6);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="box">
+		<ul id="loader-wrap">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+
+		</ul>
+	</div>
+</body>
+</html>

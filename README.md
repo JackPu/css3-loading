@@ -43,7 +43,6 @@ THe next step is writing keyframe property.
 	}
 ```html
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/simple-loading-animation.html">files</a>; 
-====================
 ###make a bar loading 
 we cam change the width of elment to create a bar loading.
 ```html
@@ -66,5 +65,42 @@ we cam change the width of elment to create a bar loading.
 ```html
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/bar-loading.html">files</a>; 
 
-### now let's do something trouble. We can make a circle loading.
+now let's do something trouble. We can make a circle loading.
+
+Firstly, we'll create a circular ring.
+
+```html
+#circle-loader-wrap{
+	overflow: hidden;
+	position: relative;
+	margin:20px;
+	width:100px;
+	height:100px;
+	box-shadow:0px 0px 20px rgba(0,0,0,.1) inset;
+	background-color: #eee;
+	border-radius:50px;
+}
+#circle-loader-wrap:after{
+	content: '';
+	position: absolute;
+	left:20px;
+	top:20px;
+	width:60px;
+	height:60px;
+	border-radius: 50%;
+	background-color:#1ba1e2; 
+	box-shadow:0 0 10px rgba(0,0,0,.2);
+
+}
+
+```
+
+Secondly we'll make the scrollbar.
+
+```html
+
+
+```
+
+see demo[<a href="http://codepen.io/Jack_Pu/pen/citru">Codepen</a>]
 
