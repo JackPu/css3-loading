@@ -60,6 +60,7 @@ see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href=
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/simple-loading-animation.html">files</a>; 
 
 ###make a bar loading 
+
 we cam change the width of elment to create a bar loading.
 ```html
 	@-webkit-keyframes loading{
@@ -79,7 +80,8 @@ we cam change the width of elment to create a bar loading.
 		}
 	}
 
-```html
+```
+
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/bar-loading.html">files</a>; 
 
 now let's do something trouble. We can make a circle loading.
@@ -115,11 +117,124 @@ Firstly, we'll create a circular ring.
 Secondly we'll make the scrollbar.
 
 ```html
+#circle-loader-wrap > div{
+			overflow: hidden;
+			position: absolute;
+			width: 50%;
+			height:100%;
+		}
 
+		.left-wrap{
+			left: 0;
+		}
+		.right-wrap{
+			left:50%;
+		}
+		.left-wrap .loader{
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+			transform-origin:0 50% 0;
+			-webkit-transform-origin:0 50% 0;
+			animation:loading-left 3s infinite linear 0;
+			-webkit-animation:loading-left 3s infinite linear 0;	
+			
+		}
+		.right-wrap .loader{
+			left:-100%;
+			border-bottom-right-radius: 0;
+			border-top-right-radius: 0;	
+			transform-origin:100% 50% 0;
+			-webkit-transform-origin:100% 50% 0;
+			animation:loading-right 3s infinite linear ;
+			-webkit-animation:loading-right 3s infinite linear ;	
+		}
+		.loader{
+			position: absolute;
+			left:100%;
+			top:0;
+			width:100%;
+			height:100%;
+			border-radius: 1000px;
+			background-color: #111;
+
+		}
 
 ```
+Thirdly,we'll write keyframes
 
-see demo[<a href="http://codepen.io/Jack_Pu/pen/citru">Codepen</a>]
+```html
+@keyframes loading-left{
+			0%{
+				transform:rotate(0deg)
+			}
+			25%{
+				transform:rotate(180deg)
+			}
+			50%{
+				transform:rotate(180deg)
+			}
+			75%{
+				transform:rotate(360deg)
+			}
+			100%{
+				transform:rotate(360deg)
+			}
+		}
+		@-webkit-keyframes loading-left{
+			0%{
+				-webkit-transform:rotate(0deg)
+			}
+			25%{
+				-webkit-transform:rotate(180deg)
+			}
+			50%{
+				-webkit-transform:rotate(180deg)
+			}
+			75%{
+				-webkit-transform:rotate(360deg)
+			}
+			100%{
+				-webkit-transform:rotate(360deg)
+			}
+		}
+		@keyframes loading-right{
+			0%{
+				transform:rotate(0deg)
+			}
+			25%{
+				transform:rotate(0deg)
+			}
+			50%{
+				transform:rotate(180deg)
+			}
+			75%{
+				transform:rotate(180deg)
+			}
+			100%{
+				transform:rotate(360deg)
+			}
+		}
+
+		@-webkit-keyframes loading-right{
+			0%{
+				-webkit-transform:rotate(0deg)
+			}
+			25%{
+				-webkit-transform:rotate(0deg)
+			}
+			50%{
+				-webkit-transform:rotate(180deg)
+			}
+			75%{
+				-webkit-transform:rotate(180deg)
+			}
+			100%{
+				-webkit-transform:rotate(360deg)
+			}
+		}
+
+```html
+
+see demo[<a href="http://codepen.io/Jack_Pu/pen/citru">Codepen</a>]  and <a href="https://github.com/JackPu/css3-loading/blob/master/css/circle-loading.html">files</a>; 
 
 
-```
