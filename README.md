@@ -21,14 +21,12 @@ firstly will make a loading icon.
 
 	}
 
-```html
+```
 
 THe next step is writing keyframe property.
 
 	
-```
 
-THe next step is writing keyframe property.
 
 ```html
     @keyframes loading {
@@ -51,17 +49,13 @@ THe next step is writing keyframe property.
 	    };
 	}
 
-```html
-see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/simple-loading-animation.html">files</a>; 
-=======
-	
 ```
-
 see demo[<a href="http://codepen.io/Jack_Pu/pen/FyBuE">Codepen</a>] and <a href="https://github.com/JackPu/css3-loading/blob/master/css/simple-loading-animation.html">files</a>; 
 
 ###make a bar loading 
 
 we cam change the width of elment to create a bar loading.
+
 ```html
 	@-webkit-keyframes loading{
 		0%:{
@@ -160,6 +154,7 @@ Secondly we'll make the scrollbar.
 		}
 
 ```
+
 Thirdly,we'll write keyframes
 
 ```html
@@ -233,7 +228,7 @@ Thirdly,we'll write keyframes
 			}
 		}
 
-```html
+```
 
 see demo[<a href="http://codepen.io/Jack_Pu/pen/citru">Codepen</a>]  and <a href="https://github.com/JackPu/css3-loading/blob/master/css/circle-loading.html">files</a>; 
 
